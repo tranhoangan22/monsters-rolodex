@@ -42,7 +42,7 @@ class App2 extends Component {
 
   // the render() method inside the App class returns the HTML
   render() {
-    const { monsters, searchField } = this.state; // we don't want to modify our state, we want to keep the rawu original data just in case
+    const { monsters, searchField } = this.state; // we don't want to modify our state, we want to keep the raw original data just in case
     const filteredMonsters = monsters.filter((monster) =>
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     );
